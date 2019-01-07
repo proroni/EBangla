@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/activity_margin"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="@dimen/activity_margin"
+            android:paddingEnd="@dimen/activity_margin"
+            android:paddingLeft="@dimen/poster_thumb_width"
+            android:paddingRight="@dimen/activity_margin"
+            android:paddingStart="@dimen/poster_thumb_width"
+            android:paddingTop="@dimen/activity_margin_half">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_margin_content"
+                android:layout_marginStart="@dimen/activity_margin_content"
+                android:layout_marginTop="@dimen/activity_margin_quarter"
+                android:maxLines="1"
+                tools:text="ভাবা সমগ্র ২ (হার্ডকভার"/>
+            <TextView
+                android:id="@+id/writer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_margin_content"
+                android:layout_marginStart="@dimen/activity_margin_content"
+                android:layout_marginTop="@dimen/activity_margin_quarter"
+                android:textColor="@color/nonHilightTextColor"
+                android:textSize="12sp"
+                android:maxLines="1"
+                tools:text="দীনেশচন্দ্র চট্টোপাধ্যায়"/>
+            <!-- <TextView
+                 android:id="@+id/category"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="@color/hilightTextColor"
+                 android:gravity="center"
+                 android:background="@drawable/bg_white_round"
+                 android:layout_marginLeft="@dimen/activity_margin_content"
+                 android:layout_marginStart="@dimen/activity_margin_content"
+                 android:layout_marginTop="@dimen/activity_margin_quarter"
+                 android:maxLines="1"
+                 android:textSize="10sp"
+                 tools:text="ভাবা সমগ্র ২ (হার্ডকভার"/>-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_margin_content"
+                android:layout_marginStart="@dimen/activity_margin_content"
+                android:layout_marginTop="@dimen/activity_margin_quarter">
+
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hilightTextColor"
+                    android:gravity="center"
+                    android:background="@drawable/bg_white_round"
+                    android:maxLines="1"
+                    android:textSize="10sp"
+                    android:layout_alignParentLeft="true"
+                    tools:text="ভাবা সমগ্র ২ (হার্ডকভার"/>
+                <TextView
+                    android:id="@+id/u"
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:visibility="invisible"
+                    android:layout_toStartOf="@+id/price"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="2dp"
+
+                    tools:text="TK."/>
+                <TextView
+                    android:id="@+id/price"
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:visibility="invisible"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    tools:text="120"
+                    android:textSize="20sp"/>
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/book_img"
+            android:src="@drawable/book1"
+            android:layout_margin="@dimen/activity_margin_half"
+            android:layout_width="@dimen/poster_thumb_width"
+            android:layout_height="@dimen/poster_thumb_height"/>
+
+
+
+
+
+
+
+</FrameLayout>
+
+
+
+
+
+
+
